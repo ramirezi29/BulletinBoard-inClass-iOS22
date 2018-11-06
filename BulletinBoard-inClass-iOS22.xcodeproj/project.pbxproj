@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		47C20D6A2190B5DE0045F596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C20D692190B5DE0045F596 /* AppDelegate.swift */; };
-		47C20D6C2190B5DE0045F596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C20D6B2190B5DE0045F596 /* ViewController.swift */; };
 		47C20D6F2190B5DE0045F596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47C20D6D2190B5DE0045F596 /* Main.storyboard */; };
 		47C20D712190B5E10045F596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47C20D702190B5E10045F596 /* Assets.xcassets */; };
 		47C20D742190B5E10045F596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47C20D722190B5E10045F596 /* LaunchScreen.storyboard */; };
+		47C20D822190B6490045F596 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47C20D812190B6490045F596 /* CloudKit.framework */; };
+		47C20D892190BCFB0045F596 /* messageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C20D882190BCFB0045F596 /* messageModel.swift */; };
+		47C20D8B2190CA020045F596 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C20D8A2190CA020045F596 /* MessageController.swift */; };
+		47C20D8D2190E0280045F596 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C20D8C2190E0280045F596 /* MessageTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47C20D662190B5DE0045F596 /* BulletinBoard-inClass-iOS22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BulletinBoard-inClass-iOS22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47C20D692190B5DE0045F596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47C20D6B2190B5DE0045F596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47C20D6E2190B5DE0045F596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47C20D702190B5E10045F596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47C20D732190B5E10045F596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47C20D752190B5E10045F596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47C20D7B2190B5F20045F596 /* BulletinBoard-inClass-iOS22.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BulletinBoard-inClass-iOS22.entitlements"; sourceTree = "<group>"; };
+		47C20D812190B6490045F596 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		47C20D882190BCFB0045F596 /* messageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageModel.swift; sourceTree = "<group>"; };
+		47C20D8A2190CA020045F596 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		47C20D8C2190E0280045F596 /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C20D822190B6490045F596 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				47C20D682190B5DE0045F596 /* BulletinBoard-inClass-iOS22 */,
 				47C20D672190B5DE0045F596 /* Products */,
+				47C20D802190B6480045F596 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,65 @@
 		47C20D682190B5DE0045F596 /* BulletinBoard-inClass-iOS22 */ = {
 			isa = PBXGroup;
 			children = (
-				47C20D692190B5DE0045F596 /* AppDelegate.swift */,
-				47C20D6B2190B5DE0045F596 /* ViewController.swift */,
-				47C20D6D2190B5DE0045F596 /* Main.storyboard */,
-				47C20D702190B5E10045F596 /* Assets.xcassets */,
-				47C20D722190B5E10045F596 /* LaunchScreen.storyboard */,
-				47C20D752190B5E10045F596 /* Info.plist */,
+				47C20D872190BA1C0045F596 /* ViewController */,
+				47C20D862190BA0E0045F596 /* ModelController */,
+				47C20D852190BA020045F596 /* Model */,
+				47C20D842190B9EB0045F596 /* UI */,
+				47C20D832190B9D90045F596 /* Resources */,
+				47C20D7B2190B5F20045F596 /* BulletinBoard-inClass-iOS22.entitlements */,
 			);
 			path = "BulletinBoard-inClass-iOS22";
+			sourceTree = "<group>";
+		};
+		47C20D802190B6480045F596 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47C20D812190B6490045F596 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47C20D832190B9D90045F596 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47C20D692190B5DE0045F596 /* AppDelegate.swift */,
+				47C20D702190B5E10045F596 /* Assets.xcassets */,
+				47C20D752190B5E10045F596 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		47C20D842190B9EB0045F596 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				47C20D722190B5E10045F596 /* LaunchScreen.storyboard */,
+				47C20D6D2190B5DE0045F596 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		47C20D852190BA020045F596 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47C20D882190BCFB0045F596 /* messageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47C20D862190BA0E0045F596 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				47C20D8A2190CA020045F596 /* MessageController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		47C20D872190BA1C0045F596 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				47C20D8C2190E0280045F596 /* MessageTableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +156,14 @@
 				TargetAttributes = {
 					47C20D652190B5DE0045F596 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47C20D6C2190B5DE0045F596 /* ViewController.swift in Sources */,
 				47C20D6A2190B5DE0045F596 /* AppDelegate.swift in Sources */,
+				47C20D8B2190CA020045F596 /* MessageController.swift in Sources */,
+				47C20D8D2190E0280045F596 /* MessageTableViewController.swift in Sources */,
+				47C20D892190BCFB0045F596 /* messageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +352,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BulletinBoard-inClass-iOS22/BulletinBoard-inClass-iOS22.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = "BulletinBoard-inClass-iOS22/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BulletinBoard-inClass-iOS22/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,9 +372,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "BulletinBoard-inClass-iOS22/BulletinBoard-inClass-iOS22.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = "BulletinBoard-inClass-iOS22/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/BulletinBoard-inClass-iOS22/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
